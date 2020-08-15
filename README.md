@@ -1,2 +1,4 @@
 # Hazel
-Hazel C++ Game Engine as per TheChernoProject
+Step1: setup and entry point
+
+git push -u origin master
