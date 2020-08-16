@@ -13,9 +13,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- include directories relative to root folder 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
-
+IncludeDir["GLAD"] = "Hazel/vendor/GLAD/include"
+IncludeDir["imgui"] = "Hazel/vendor/imgui"
 include "Hazel/vendor/GLFW"
-
+include "Hazel/vendor/GLAD"
+include "Hazel/vendor/imgui"
 project "Hazel"
 	location "Hazel"
 	kind "SharedLib"
@@ -36,12 +38,16 @@ project "Hazel"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.GLAD}",
+		"%{IncludeDir.imgui}"
 	}
 
 	links
 	{
 		"GLFW",
+		"GLAD",
+		"imgui",
 		"opengl32.lib"
 	}
 
@@ -53,7 +59,8 @@ project "Hazel"
 		defines
 		{
 			"HZ_PLATFORM_WINDOWS",
-			"HZ_BUILD_DLL"
+			"HZ_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
