@@ -2,6 +2,7 @@
 #include "Application.h"
 #include "Hazel/Events/ApplicationEvent.h"
 #include <glad/glad.h>
+#include "Input.h"
 
 namespace Hazel {
 
