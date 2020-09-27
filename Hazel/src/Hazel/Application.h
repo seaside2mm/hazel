@@ -2,10 +2,13 @@
 
 #include "Core.h"
 #include "Window.h"
+<<<<<<< HEAD
 #include "Hazel/Events/ApplicationEvent.h"
 #include "Hazel/Events/Event.h"
 #include "Hazel/LayerStack.h"
 
+=======
+>>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 namespace Hazel {
 
 	class HAZEL_API Application
@@ -15,6 +18,7 @@ namespace Hazel {
 		virtual ~Application();
 
 		void Run();
+<<<<<<< HEAD
 
 		void OnEvent(Event& e);
 
@@ -23,9 +27,9 @@ namespace Hazel {
 
 		inline static Application& Get() { return *s_Instance;  }
 		inline Window& GetWindow() { return *m_Window;  }
+=======
+>>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 	private:
-		bool OnWindowClose(WindowCloseEvent& e);
-
 		std::unique_ptr<Window> m_Window; 
 		bool m_Running = true;
 		LayerStack m_LayerStack;

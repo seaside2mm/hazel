@@ -5,16 +5,18 @@
 
 namespace Hazel {
 
+<<<<<<< HEAD
 #define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
 
 	Application* Application::s_Instance = nullptr;
 	
+=======
+>>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 	Application::Application()
 	{
 		HZ_CORE_ASSERT(!s_Instance, "Application already exists!");
 		s_Instance = this;
 		m_Window = std::unique_ptr<Window>(Window::Create());
-		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
 	}
 
 
@@ -22,6 +24,7 @@ namespace Hazel {
 	{
 	}
 
+<<<<<<< HEAD
 	void Application::PushLayer(Layer* layer)
 	{
 		m_LayerStack.PushLayer(layer);
@@ -49,6 +52,8 @@ namespace Hazel {
 		}
 	}
 
+=======
+>>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 	void Application::Run() 
 	{
 		WindowResizeEvent e(1200, 700);
@@ -69,12 +74,6 @@ namespace Hazel {
 				layer->OnUpdate();
 			m_Window->OnUpdate();
 		}
-	}
-
-	bool Application::OnWindowClose(WindowCloseEvent& e)
-	{
-		m_Running = false;
-		return true;
 	}
 }
 
