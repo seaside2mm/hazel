@@ -2,12 +2,7 @@
 #include "Hazel/Core.h"
 #include "hzpch.h"
 namespace Hazel {
-
-	// Events in Hazel are currently blocking, meaning when an event occurs it
-	// immediately gets dispatched and must be dealt with right then an there.
-	// For the future, a better strategy might be to buffer events in an event
-	// bus and process them during the "event" part of the update stage.
-
+	//事件类型
 	enum class EventType
 	{
 		None = 0,
@@ -16,7 +11,7 @@ namespace Hazel {
 		KeyPressed, KeyReleased, KeyTyped,
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
-
+	//事件种类
 	enum EventCategory
 	{
 		None = 0,
