@@ -6,10 +6,13 @@
 namespace Hazel {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
 
 	Application* Application::s_Instance = nullptr;
 	
+=======
+>>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 =======
 >>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 	Application::Application()
@@ -24,6 +27,7 @@ namespace Hazel {
 	{
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	void Application::PushLayer(Layer* layer)
 	{
@@ -52,6 +56,8 @@ namespace Hazel {
 		}
 	}
 
+=======
+>>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 =======
 >>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 	void Application::Run() 

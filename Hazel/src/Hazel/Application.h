@@ -3,10 +3,13 @@
 #include "Core.h"
 #include "Window.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "Hazel/Events/ApplicationEvent.h"
 #include "Hazel/Events/Event.h"
 #include "Hazel/LayerStack.h"
 
+=======
+>>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 =======
 >>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 namespace Hazel {
@@ -19,6 +22,7 @@ namespace Hazel {
 
 		void Run();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 		void OnEvent(Event& e);
 
@@ -27,6 +31,8 @@ namespace Hazel {
 
 		inline static Application& Get() { return *s_Instance;  }
 		inline Window& GetWindow() { return *m_Window;  }
+=======
+>>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 =======
 >>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 	private:

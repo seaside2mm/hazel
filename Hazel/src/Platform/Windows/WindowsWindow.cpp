@@ -1,6 +1,7 @@
 #include "hzpch.h"
 #include "WindowsWindow.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #include "Hazel/Events/KeyEvent.h"
 #include "Hazel/Events/MouseEvent.h"
@@ -9,6 +10,8 @@
 >>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 
 #include <glad/glad.h>
+=======
+>>>>>>> parent of 8424ddc... EvetnCallback and Close Window
 
 namespace Hazel {
 	
