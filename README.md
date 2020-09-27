@@ -214,4 +214,3 @@ app = CreateApplication()
 app->Run()
     while (m_Running) {m_Window->OnUpdate()}
 ```
-
